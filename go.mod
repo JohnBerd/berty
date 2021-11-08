@@ -5,7 +5,7 @@ go 1.16
 require (
 	bazil.org/fuse v0.0.0-20200524192727-fb710f7dfd05 // indirect
 	berty.tech/go-ipfs-log v1.5.0
-	berty.tech/go-ipfs-repo-encrypted v1.0.8
+	berty.tech/go-ipfs-repo-encrypted v1.0.9
 	berty.tech/go-libp2p-tor-transport v0.8.4
 	berty.tech/go-orbit-db v1.13.0
 	berty.tech/ipfs-webui-packed v1.0.0-v2.11.4-1
@@ -43,7 +43,7 @@ require (
 	github.com/improbable-eng/grpc-web v0.14.1
 	github.com/ipfs-shipyard/gomobile-ipfs/go v0.0.0-20210203140645-9df95f2abec2
 	github.com/ipfs/go-cid v0.1.0
-	github.com/ipfs/go-datastore v0.4.6
+	github.com/ipfs/go-datastore v0.5.0
 	github.com/ipfs/go-filestore v1.0.0 // indirect
 	github.com/ipfs/go-ipfs v0.10.0
 	github.com/ipfs/go-ipfs-blockstore v1.0.4 // indirect
