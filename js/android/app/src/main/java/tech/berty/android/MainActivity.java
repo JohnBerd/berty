@@ -8,6 +8,11 @@ import com.zoontek.rnbootsplash.RNBootSplash; // needed by react-native-bootspla
 import com.shakebugs.shake.Shake;
 import android.view.MotionEvent;
 
+// needed by react-native-gesture-handler
+import com.facebook.react.ReactActivityDelegate;
+import com.facebook.react.ReactRootView;
+import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+
 public class MainActivity extends ReactActivity {
 
   /**
@@ -23,6 +28,16 @@ public class MainActivity extends ReactActivity {
   public boolean dispatchTouchEvent(MotionEvent ev) {
       Shake.handleTouchEvent(ev, this);
       return super.dispatchTouchEvent(ev);
+  }
+
+  // needed by react-native-gesture-handler
+  protected ReactActivityDelegate createReactActivityDelegate() {
+    return new ReactActivityDelegate(this, getMainComponentName()) {
+      @Override
+      protected ReactRootView createRootView() {
+        return new RNGestureHandlerEnabledRootView(MainActivity.this);
+      }
+    };
   }
 
    // needed by react-native-bootsplash
