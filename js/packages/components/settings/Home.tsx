@@ -55,8 +55,9 @@ const HomeHeaderGroupButton: React.FC<{ navigation: ComponentProps<typeof Home>[
 		const { t }: any = useTranslation()
 
 		return (
-			<View style={[padding.horizontal.medium]}>
+			<View>
 				<ButtonSettingRow
+					style={[padding.horizontal.medium]}
 					isScroll
 					state={[
 						{
